@@ -1,0 +1,231 @@
+/* ===========================
+   CSS RESET
+=========================== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* ===========================
+   BODY
+=========================== */
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.5;
+}
+
+/* ===========================
+   TYPOGRAPHY
+=========================== */
+
+h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+h2 {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+    color: #003366;
+}
+
+p {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+}
+
+/* ===========================
+   HEADER
+=========================== */
+
+header {
+    background-color: #003366;
+    color: white;
+    padding: 20px;
+}
+
+/* ===========================
+   NAVIGATION
+=========================== */
+
+nav ul {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+    margin-top: 15px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: yellow;
+    text-decoration: underline;
+}
+
+/* ===========================
+   MAIN
+=========================== */
+
+main {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* ===========================
+   SECTION SPACING
+=========================== */
+
+section {
+    margin: 40px 0;
+}
+
+/* ===========================
+   ABOUT SECTION
+   (Use class="about-container")
+=========================== */
+
+.about-container {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.about-container img {
+    width: 250px;
+    border-radius: 10px;
+}
+
+/* ===========================
+   TABLE
+=========================== */
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th,
+td {
+    border: 1px solid #ccc;
+    padding: 12px;
+    text-align: left;
+}
+
+thead {
+    background-color: #003366;
+    color: white;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+tbody tr:hover {
+    background-color: #d9ecff;
+}
+
+/* ===========================
+   FORM
+=========================== */
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input,
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid gray;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+textarea {
+    resize: vertical;
+}
+
+/* ===========================
+   BUTTON
+=========================== */
+
+button,
+input[type="submit"] {
+    background-color: #003366;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover,
+input[type="submit"]:hover {
+    background-color: #0055aa;
+}
+
+button:focus,
+input[type="submit"]:focus,
+input:focus,
+textarea:focus {
+    outline: 3px solid orange;
+    outline-offset: 2px;
+}
+
+/* ===========================
+   FOOTER
+=========================== */
+
+footer {
+    background-color: #222;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+.hidden {
+    display: none;
+}
+
+footer a {
+    color: #66ccff;
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: yellow;
+    text-decoration: underline;
+}
+
+/* ===========================
+   RESPONSIVE DESIGN
+=========================== */
+
+@media (max-width: 600px) {
+
+    nav ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .about-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .about-container img {
+        width: 180px;
+    }
+}

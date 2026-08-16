@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ifaa Studio</title>
+
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header>
+        <h1>ifaa Studio</h1>
+
+        <p>Creative Design & Photography Studio</p>
+        <p id="greeting"></p>
+
+        <nav>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#contact">Get in Touch</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+
+        <!-- About Section -->
+        <section id="about">
+            <h2>About ifaa Studio</h2>
+
+            <p>
+                ifaa Studio is a creative studio dedicated to photography,
+                branding, and digital design. We help individuals,
+                entrepreneurs, and businesses create visually appealing
+                content that strengthens their brand identity.
+            </p>
+
+            <p id="aboutMore" class="hidden">
+                Our mission is to deliver high-quality creative work with
+                attention to detail and professionalism. Whether it's a
+                personal photoshoot, business branding, or graphic design,
+                we strive to bring every client's vision to life.
+            </p>
+
+            <button type="button" id="toggleAbout">Show more</button>
+
+            <img
+                src="https://images.unsplash.com/photo-1497366754035-f200968a6e72?w=600"
+                alt="Modern creative studio workspace with a laptop and desk">
+        </section>
+
+        <!-- Services Section -->
+        <section id="services">
+            <h2>Our Services</h2>
+
+            <table border="1">
+                <thead>
+                    <tr>
+                        <th>Service</th>
+                        <th>Experience Level</th>
+                        <th>Confidence Rating</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <td>Photography</td>
+                        <td>Expert</td>
+                        <td>10/10</td>
+                    </tr>
+
+                    <tr>
+                        <td>Graphic Design</td>
+                        <td>Expert</td>
+                        <td>9/10</td>
+                    </tr>
+
+                    <tr>
+                        <td>Brand Identity Design</td>
+                        <td>Intermediate</td>
+                        <td>8/10</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact">
+            <h2>Get in Touch</h2>
+
+            <form id="contactForm" action="#" method="post">
+
+                <p>
+                    <label for="name">Full Name</label><br>
+                    <input
+                        type="text"
+                        id="name"
+                        name="name"
+                        placeholder="Enter your name">
+                </p>
+
+                <p id="nameEcho">Hi there!</p>
+
+                <p>
+                    <label for="email">Email Address</label><br>
+                    <input
+                        type="email"
+                        id="email"
+                        name="email"
+                        placeholder="Enter your email">
+                </p>
+
+                <p>
+                    <label for="message">Message</label><br>
+                    <textarea
+                        id="message"
+                        name="message"
+                        rows="5"
+                        cols="40"
+                        placeholder="Write your message here"></textarea>
+                </p>
+
+                <p id="formMessage"></p>
+
+                <button type="submit">Send Message</button>
+
+            </form>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 ifaa Studio. All Rights Reserved.</p>
+
+        <button type="button" id="likeButton">Like this page (0)</button>
+
+        <a href="https://www.instagram.com/">Instagram</a>
+    </footer>
+
+</body>
+</html>  
